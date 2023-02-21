@@ -1,0 +1,11 @@
+Administrador de Dados (AD): Suas funções são mais alinhadas ao negócio, portanto dessempenha pápel de contribuir e entender as funções de trabalho da empresa. Domina os processos empressáriais e a organização dos dados para contruir informações. Define os acessos aos dados e elaborar as estrutura dos modelos conceitoais, lógicos e dos dicíonarios de dados.
+
+Adiministrador de Banco de Dados (DBA): Gerencia e administra o Banco de Dados, olhando para a infraestrutura do banco de dados, atualizando e implementando o banco de dados. Gerencia os bancos e seus usuários e softwares e hardwares e torna ele mais performático. 
+
+BI: Processo de extração dos dados armazenados nas tabelas dos bancos de dados de uma organização, com o intuito de transformar em informação e após isso em conhecimento.
+
+Big Data: Termo para descrever um grande número de dados armazenados. 
+
+Data Mining (): Processo de exploração de dados em busca de padrões consistêntes
+
+Data Science: Profisional que possue capacidade de resolver problemas de negócio. Aplicando metódos ciêntificos e técnicas avançadas tanto de machine learning quanto IA (AD + DBA + BI), possuindo conhecimento de negócio e teórico de Banco de Dados.

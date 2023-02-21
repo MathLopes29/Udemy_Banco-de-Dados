@@ -1,0 +1,57 @@
+RESUMO ENTRE OS COMPONENTES DO SQL!
+
+(DDL) permite aos usuários especificar um esquema de banco de dados através de um conjunto de definições. Portanto, um esquema é o projeto geral de um banco de dados e raramente é modificado
+
+(DML) é uma família de linguagens de computador, incluindo comandos que permitem aos usuários manipular dados em um banco de dados. Portanto, essa manipulação envolve inserir dados em tabelas de banco de dados, recuperar dados existentes, excluir dados de tabelas existentes e modificar dados existentes. 
+
+(DCL) inclui comandos como GRANT e REVOKE que lidam principalmente com os direitos, permissões e outros controles do sistema de banco de dados. 
+- GRANT: concede aos usuários privilégios de acesso ao banco de dados. 
+- REVOKE: retira os privilégios de acesso do usuário dados usando o comando GRANT.
+
+(TCL) são usados para gerenciar transações no banco de dados. Dessa forma, um conjunto de instruções SQL correlacionadas logicamente e executadas nos dados armazenados na tabela é conhecido como transação.  
+- COMMIT: confirma uma transação. 
+- ROLLBACK: reverte uma transação no caso de ocorrer algum erro. 
+- SAVE POINT: define um ponto de salvamento dentro de uma transação.
+
+
+1º Forma Normal: 
+* Todo campo deve ser vetorizado em outra tabela; 
+* Todo campo Multivalorado deve se tornar uma novo campo divisível;
+* Toda tabela necessita de pelo menos uma Primary Key (Natural ou Arttíficial (Auto_Increment)).
+
+Cardinalidade e Obrigatóriedade: Basseado na Regra de Negócio
+* Relação entre Tabelas onde pode ser: (1X1) (1XN) (0X1) (0XN)
+* 0 - Não Obrigatório
+* 1 - Obrigatório
+* N - Mais de Um 
+* 1 - Maxímo de Um 
+
+Importante:
+* Comandos com NOT_NULL - Não pode ter espaço vazio
+* ENUM ('M','F'); - Apenas Funciona no SQL Server!
+* UNIQUE - Só pode ter apenas um dado cadastrado!
+
+Foreign	Key - Chave de Ligação entre Tabelas / Chave PK de uma tabela que se liga ou referencia uma outra chave de outra tabela
+
+/**
+...
+id_Cliente int,
+FOREING KEY (id_Cliente)
+REFERENCES Cliente(idCliente)
+);*/
+
+/**
+INSERT INTO Cliente (Nome, RG, CPF) VALUES 
+('matheus', '578154148-07', '259.631.008-98'),
+('carlos',  '894545612-09', '306.987.415-05')
+;
+*/
+
+/*
+PROCEDURES MySQL:
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `Consulta_Cliente`()
+SELECT cliente.idCliente, cliente.Nome, cliente.Telefone, cliente.Ender, cliente.Email FROM CLIENTE ORDER BY cliente.idCliente$$
+DELIMITER ;
+*/
+

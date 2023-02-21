@@ -1,0 +1,28 @@
+O que é preciso?
+* Servdor
+* Sistema Operacional
+* Conexão de Rede
+* Armazenamento
+
+Atribuição DBA Júnior
+* Permissões
+* Monitoramento
+* Criação de Usuários
+* Gerenciamento de Banco de Dados (Backup)
+* Consultas no Dicionário de Dados
+* Algumas instalações
+
+Como deve ser um BD?
+* Info permantentes,
+* Acessíveis rapidamente
+* Seguras
+* Disponíveis imediatamente
+
+Oracle x SQL Server
+* Oracle = Caro mais instável, constantes mudanças
+* SQL Server = Melhor para BI, mais acessível
+* APRENDAM OS DOIS !
+
+DBA para Administrar?
+* SQL Plus - Melhor
+* Oracle SQL Developer - Free
