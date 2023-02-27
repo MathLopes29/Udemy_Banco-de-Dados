@@ -5,6 +5,6 @@
 </div><hr>
 
 <div align="center">
-    <p>Material do curso "Domine as Linguagens SQL e T-SQL"</p>
+    <p>Material do curso Domine as Linguagens SQL e T-SQL</p>
 </div>
 
